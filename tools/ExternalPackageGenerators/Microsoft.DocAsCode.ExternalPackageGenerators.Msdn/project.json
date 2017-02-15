@@ -44,7 +44,7 @@
     "emitEntryPoint": true
   },
   "frameworks": {
-    "net452": {
+    "net46": {
       "frameworkAssemblies": {
         "System.Configuration": "4.0.0.0",
         "System.Runtime": "",

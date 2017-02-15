@@ -9,7 +9,9 @@
     "xunit": "2.2.0-beta2-build3300",
     "dotnet-test-xunit": "2.2.0-preview2-build1029",
     "System.Collections.Immutable": "1.2.1",
-    "Microsoft.Composition": "1.0.27"
+    "Microsoft.Composition": "1.0.27",
+    "Microsoft.Build": "15.1.0-preview-000370-00",
+    "Microsoft.Build.Tasks.Core": "15.1.0-preview-000370-00"
   },
   "buildOptions": {
     "compile": {
@@ -34,6 +36,6 @@
     }
   },
   "frameworks": {
-    "net452": {}
+    "net46": {}
   }
 }

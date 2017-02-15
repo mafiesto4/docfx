@@ -20,7 +20,7 @@ function DotnetBuild {
     param($folder)
     if (Test-Path (Join-Path $folder.FullName "project.json"))
     {
-        & dotnet build $folder.FullName -c $configuration -f net452
+        & dotnet build $folder.FullName -c $configuration -f net46
         ProcessLastExitCode $lastexitcode "dotnet build $folder error"
     }
 }
@@ -29,7 +29,7 @@ function DotnetPublish {
     param($folder)
     if (Test-Path (Join-Path $folder.FullName "project.json"))
     {
-        & dotnet publish $folder.FullName -c $configuration -f net452 -o target\$configuration\$folder
+        & dotnet publish $folder.FullName -c $configuration -f net46 -o target\$configuration\$folder
         ProcessLastExitCode $lastexitcode "dotnet publish $folder error"
     }
 }

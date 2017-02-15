@@ -32,7 +32,7 @@
     }
   },
   "frameworks": {
-    "net452": {
+    "net46": {
       "frameworkAssemblies": {
         "System.Web": "4.0.0.0"
       }

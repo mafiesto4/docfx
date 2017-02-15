@@ -15,6 +15,6 @@
     "Microsoft.Composition": "1.0.27"
   },
   "frameworks": {
-    "net452": {}
+    "net46": {}
   }
 }

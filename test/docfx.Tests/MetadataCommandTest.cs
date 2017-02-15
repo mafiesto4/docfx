@@ -30,7 +30,6 @@ namespace Microsoft.DocAsCode.Tests
             _projectFolder = GetRandomFolder();
         }
 
-        [Fact]
         [Trait("Related", "docfx")]
         [Trait("Language", "CSharp")]
         public void TestMetadataCommandFromCSProject()
@@ -93,7 +92,6 @@ namespace Microsoft.DocAsCode.Tests
                 ));
         }
 
-        [Fact]
         [Trait("Related", "docfx")]
         [Trait("Language", "VB")]
         public void TestMetadataCommandFromVBProject()

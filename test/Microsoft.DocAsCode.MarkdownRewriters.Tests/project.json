@@ -10,6 +10,6 @@
     "System.Collections.Immutable": "1.2.1"
   },
   "frameworks": {
-    "net452": {}
+    "net46": {}
   }
 }

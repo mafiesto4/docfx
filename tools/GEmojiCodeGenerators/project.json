@@ -35,6 +35,6 @@
     "emitEntryPoint": true
   },
   "frameworks": {
-    "net452": {}
+    "net46": {}
   }
 }

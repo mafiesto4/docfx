@@ -23,7 +23,7 @@
     }
   },
   "frameworks": {
-    "net452": {
+    "net46": {
       "frameworkAssemblies": {
         "System.Net": "4.0.0.0"
       }

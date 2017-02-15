@@ -35,7 +35,7 @@
     }
   },
   "frameworks": {
-    "net452": {
+    "net46": {
       "frameworkAssemblies": {
         "System.Web": ""
       }
