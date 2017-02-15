@@ -14,7 +14,7 @@
     "Microsoft.DocAsCode.Dfm": "1.0.0",
     "Microsoft.DocAsCode.Common": "1.0.0",
     "Microsoft.DocAsCode.MarkdownLite": "1.0.0",
-    "System.Collections.Immutable": "1.2.0"
+    "System.Collections.Immutable": "1.2.1"
   },
   "configurations": {
     "Debug": {

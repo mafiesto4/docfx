@@ -31,7 +31,9 @@
     "Microsoft.Owin.Host.HttpListener": "3.0.1",
     "Microsoft.Owin.Hosting": "3.0.1",
     "Microsoft.Owin.SelfHost": "3.0.1",
-    "Microsoft.Owin.StaticFiles": "3.0.1"
+    "Microsoft.Owin.StaticFiles": "3.0.1",
+    "Microsoft.Build": "15.1.0-preview-000370-00",
+    "Microsoft.Build.Tasks.Core": "15.1.0-preview-000370-00"
   },
   "configurations": {
     "Debug": {
@@ -47,7 +49,7 @@
     }
   },
   "frameworks": {
-    "net452": {}
+    "net46": {}
   },
   "buildOptions": {
     "emitEntryPoint": true,

@@ -13,7 +13,7 @@
   "dependencies": {
     "Newtonsoft.Json": "9.0.1",
     "Microsoft.Composition": "1.0.27",
-    "System.Collections.Immutable": "1.2.0",
+    "System.Collections.Immutable": "1.2.1",
     "YamlDotNet.Signed": "4.1.0",
     "Microsoft.DocAsCode.Build.Common": "1.0.0",
     "Microsoft.DocAsCode.Common": "1.0.0",
