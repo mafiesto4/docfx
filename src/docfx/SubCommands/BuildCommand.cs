@@ -52,7 +52,7 @@ namespace Microsoft.DocAsCode.SubCommands
 
             if (Config?.Serve ?? false)
             {
-                ServeCommand.Serve(outputFolder, Config.Port);
+                ServeCommand.Serve(outputFolder, Config.Ip, Config.Port);
             }
             EnvironmentContext.Clean();
         }

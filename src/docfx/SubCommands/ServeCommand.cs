@@ -26,15 +26,16 @@ namespace Microsoft.DocAsCode.SubCommands
 
         public void Exec(SubCommandRunningContext context)
         {
-            Serve(_options.Folder, _options.Port.HasValue ? _options.Port.Value.ToString() : null);
+            Serve(_options.Folder, _options.Ip, _options.Port.HasValue ? _options.Port.Value.ToString() : null);
         }
 
-        public static void Serve(string folder, string port)
+        public static void Serve(string folder, string ip, string port)
         {
             if (string.IsNullOrEmpty(folder)) folder = Directory.GetCurrentDirectory();
             folder = Path.GetFullPath(folder);
+			ip = string.IsNullOrWhiteSpace(ip) ? "localhost" : ip;			
             port = string.IsNullOrWhiteSpace(port) ? "8080" : port;
-            var url = $"http://localhost:{port}";
+            var url = $"http://{ip}:{port}";
             if (!Directory.Exists(folder))
             {
                 throw new ArgumentException("Site folder does not exist. You may need to build it first. Example: \"docfx docfx_project/docfx.json\"", nameof(folder));
