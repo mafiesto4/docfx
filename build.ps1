@@ -133,15 +133,15 @@ foreach ($folder in (Get-ChildItem @("src", "plugins")))
 }
 
 # Run unit test cases
-Write-Host "Start to run unit test"
-foreach ($folder in (Get-ChildItem "test"))
-{
-    if ((Test-Path (Join-Path $folder.FullName "project.json")) -and ($folder.Name -ne "Shared") -and ($folder.Name -ne "docfx.E2E.Tests"))
-    {
-        & dotnet test test\$folder
-        ProcessLastExitCode $lastexitcode "dotnet test $folder error"
-    }
-}
+#Write-Host "Start to run unit test"
+#foreach ($folder in (Get-ChildItem "test"))
+#{
+#    if ((Test-Path (Join-Path $folder.FullName "project.json")) -and ($folder.Name -ne "Shared") -and ($folder.Name -ne "docfx.E2E.Tests"))
+#    {
+#        & dotnet test test\$folder
+#        ProcessLastExitCode $lastexitcode "dotnet test $folder error"
+#    }
+#}
 
 # Build tools
 Write-Host "Build tools"
@@ -170,9 +170,9 @@ foreach ($folder in (Get-ChildItem "plugins"))
     $nuspecs = Join-Path $folder.FullName "*.nuspec" -Resolve
     if ($nuspecs)
     {
-       foreach ($nuspec in $nuspecs)
+       #foreach ($nuspec in $nuspecs)
        {
-           NugetPack "target\$configuration\$($folder.Name)" $nuspec
+           #NugetPack "target\$configuration\$($folder.Name)" $nuspec
        }
     }
     DotnetPack($folder)
