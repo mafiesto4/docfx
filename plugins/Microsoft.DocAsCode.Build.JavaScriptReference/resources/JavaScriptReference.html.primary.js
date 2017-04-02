@@ -64,7 +64,7 @@ function joinType(parameter) {
 
 function groupParameters(parameters) {
   // group parameter with properties
-  if (!parameters || parameters.length == 0) return parameters;
+  if (!parameters || parameters.length === 0) return parameters;
   var groupedParameters = [];
   var stack = [];
   for (var i = 0; i < parameters.length; i++) {
@@ -74,7 +74,7 @@ function groupParameters(parameters) {
     while (stack.length > 0) {
       var top = stack.pop();
       var prefix = top.id + '.';
-      if (parameter.id.indexOf(prefix) == 0) {
+      if (parameter.id.indexOf(prefix) === 0) {
         prefixLength = prefix.length;
         if (!top.parameter.properties) {
           top.parameter.properties = [];
@@ -83,7 +83,7 @@ function groupParameters(parameters) {
         stack.push(top);
         break;
       }
-      if (stack.length == 0) {
+      if (stack.length === 0) {
         groupedParameters.push(top.parameter);
       }
     }
